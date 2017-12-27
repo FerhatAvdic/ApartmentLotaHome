@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="260px" height="187px" viewBox="0 0 260 187" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-380.000000, -151.000000)" fill="#FFFFFF">
+            <g id="Group-2" transform="translate(0.000000, 151.000000)">
+                <text id="APARTMANI" font-family="GalanoGrotesque-Bold, Galano Grotesque" font-size="43" font-weight="bold">
+                    <tspan x="380.9575" y="187">APARTMANI</tspan>
+                </text>
+                <g id="Group" transform="translate(449.000000, 0.000000)">
+                    <polygon id="Star" points="22.9337349 52.1025641 8.86583851 59.4555839 11.5525677 43.8816381 0.171400366 32.8521084 15.8997867 30.5799004 22.9337349 16.4102564 29.9676832 30.5799004 45.6960695 32.8521084 34.3149022 43.8816381 37.0016314 59.4555839"></polygon>
+                    <polygon id="Star-Copy" points="67.5 35.6923077 53.4321036 43.0453275 56.1188327 27.4713817 44.7376654 16.441852 60.4660518 14.169644 67.5 0 74.5339482 14.169644 90.2623346 16.441852 78.8811673 27.4713817 81.5678964 43.0453275"></polygon>
+                    <polygon id="Star-Copy-2" points="112.066265 52.1025641 97.9983686 59.4555839 100.685098 43.8816381 89.3039305 32.8521084 105.032317 30.5799004 112.066265 16.4102564 119.100213 30.5799004 134.8286 32.8521084 123.447432 43.8816381 126.134161 59.4555839"></polygon>
+                </g>
+                <text id="Lota" font-family="GreatVibes-Regular, Great Vibes" font-size="97" font-weight="normal">
+                    <tspan x="434.5455" y="140.90625">Lota</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
