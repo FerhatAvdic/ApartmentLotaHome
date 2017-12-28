@@ -2,6 +2,7 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
+import Gmap from './Gmap'
 import router from './router'
 
 Vue.config.productionTip = false
@@ -12,4 +13,11 @@ new Vue({
   router,
   template: '<App/>',
   components: { App }
+})
+
+new Vue({
+  el: '#gmap',
+  router,
+  template: '<Gmap/>',
+  components: { Gmap }
 })
