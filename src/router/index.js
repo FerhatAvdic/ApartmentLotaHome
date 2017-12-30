@@ -1,15 +1,29 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import Homepage from '@/components/Homepage'
 
 Vue.use(Router)
 
-export default new Router({
+const router = new Router({
   routes: [
-    {
+    { 
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      redirect: '/en'
+    },
+    {
+      path: '/:localeId',
+      name: 'Homepage',
+      component: Homepage
     }
   ]
 })
+const locales = ['hr', 'en', 'ge']
+
+
+router.beforeEach((to,from,next) => {
+  if (locales.indexOf(to.params.localeId) < 0) next('en')
+  else next()
+})
+
+
+export default router
