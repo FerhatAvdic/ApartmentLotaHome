@@ -2,8 +2,9 @@
   <gmap-map
     :center="center"
     :zoom="14"
-    style="width: 100%; height: 300px"
+    :styles="[styles]"
   >
+  <!--style="width: 100%; height: 300px"-->
     <gmap-marker
       :key="index"
       v-for="(m, index) in markers"
@@ -36,7 +37,83 @@
           position: {lat: 45.2965, lng: 14.518}
         }, {
           position: {lat: 45.2965, lng: 14.518}
-        }]
+        }],
+        styles:    [
+              {
+                "featureType": "landscape.man_made",
+                "elementType": "geometry.fill",
+                "stylers": [
+                  {
+                    "color": "#e8e9f4"
+                  }
+                ]
+              },
+              {
+                "featureType": "landscape.natural",
+                "elementType": "geometry.fill",
+                "stylers": [
+                  {
+                    "color": "#fafbce"
+                  }
+                ]
+              },
+              {
+                "featureType": "road.arterial",
+                "elementType": "geometry.fill",
+                "stylers": [
+                  {
+                    "color": "#ffc68c"
+                  }
+                ]
+              },
+              {
+                "featureType": "road.highway",
+                "elementType": "geometry.fill",
+                "stylers": [
+                  {
+                    "color": "#ed8989"
+                  }
+                ]
+              },
+              {
+                "featureType": "road.highway",
+                "elementType": "geometry.stroke",
+                "stylers": [
+                  {
+                    "color": "#ffc891"
+                  }
+                ]
+              },
+              {
+                "featureType": "road.local",
+                "elementType": "geometry.fill",
+                "stylers": [
+                  {
+                    "color": "#d2bf93"
+                  }
+                ]
+              },
+              {
+                "featureType": "transit.line",
+                "elementType": "geometry.fill",
+                "stylers": [
+                  {
+                    "color": "#c9e4e1"
+                  }
+                ]
+              },
+              {
+                "featureType": "water",
+                "elementType": "geometry.fill",
+                "stylers": [
+                  {
+                    "color": "#25a6b4"
+                  }
+                ]
+              }
+            ]
+
+        
       }
     }
   }

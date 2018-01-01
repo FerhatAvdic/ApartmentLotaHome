@@ -16,7 +16,7 @@ export default {
   name: 'Slider',
   data () {
     return {
-      //object extended by only one locale
+      //object to be extended by only one locale
       vmText: {},
       //object with all locales
       text: {
@@ -54,8 +54,8 @@ export default {
   -o-background-size: cover;
   background-size: cover;
   background-position: top;
-  width: 100%;
-  height: 430px;
+  /*width: 100%;
+  height: 430px;*/
 }
 .logo{
   width: 230px;
