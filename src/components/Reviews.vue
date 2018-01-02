@@ -27,14 +27,14 @@ export default {
             hr: {
                 profile: "https://s3.amazonaws.com/uifaces/faces/twitter/mrebay007/128.jpg",
                 name:"Casimer White",
-                text: "Eaque eos enim iste voluptatem dolor. Nesciunt ut fugiat fugit id. Cum pariatur quae unde. Eligendi non animi et sit qui praesentium et eum. Corrupti dolor exercitationem labore neque. Aut dolor explicabo iusto quae ullam rerum expedita eligendi voluptatem."
+                text: "Eaque eos enim iste voluptatem dolor. Nesciunt ut fugiat fugit id. Cum pariatur quae unde. Elidendi non animi et sit qui praesentium et eum. Corrupti dolor exercitationem labore neque. Aut dolor explicabo iusto quae ullam rerum expedita elidendi voluptatem."
             },
             en: {
                 profile: "https://s3.amazonaws.com/uifaces/faces/twitter/mrebay007/128.jpg",
                 name:"Casimer White",
                 text: "Asperiores et voluptas dolores est. Enim iure sunt illum dolor voluptates magni accusantium tempora non. Vel aliquam aut natus voluptatem ullam consequatur ab nulla."
             },
-            ge: {
+            de: {
                 profile: "https://s3.amazonaws.com/uifaces/faces/twitter/mrebay007/128.jpg",
                 name:"Casimer White",
                 text: "Mollitia quam cupiditate quisquam. Itaque rerum alias ut. Ut inventore et aliquid."
@@ -51,24 +51,24 @@ export default {
                 name:"Henry Hoffman",
                 text: "Asperiores et voluptas dolores est. Enim iure sunt illum dolor voluptates magni accusantium tempora non. Vel aliquam aut natus voluptatem ullam consequatur ab nulla."
             },
-            ge: {
+            de: {
                 profile: "https://s3.amazonaws.com/uifaces/faces/twitter/HenryHoffman/128.jpg",
                 name:"Henry Hoffman",
-                text: "Eaque eos enim iste voluptatem dolor. Nesciunt ut fugiat fugit id. Cum pariatur quae unde. Eligendi non animi et sit qui praesentium et eum. Corrupti dolor exercitationem labore neque. Aut dolor explicabo iusto quae ullam rerum expedita eligendi voluptatem."
+                text: "Eaque eos enim iste voluptatem dolor. Nesciunt ut fugiat fugit id. Cum pariatur quae unde. Elidendi non animi et sit qui praesentium et eum. Corrupti dolor exercitationem labore neque. Aut dolor explicabo iusto quae ullam rerum expedita elidendi voluptatem."
             }
         },
         {
             hr: {
                 profile: "https://s3.amazonaws.com/uifaces/faces/twitter/dmitriychuta/128.jpg",
                 name:"Dmitriy Chuta",
-                text: "Eaque eos enim iste voluptatem dolor. Nesciunt ut fugiat fugit id. Cum pariatur quae unde. Eligendi non animi et sit qui praesentium et eum. Corrupti dolor exercitationem labore neque. Aut dolor explicabo iusto quae ullam rerum expedita eligendi voluptatem."
+                text: "Eaque eos enim iste voluptatem dolor. Nesciunt ut fugiat fugit id. Cum pariatur quae unde. Elidendi non animi et sit qui praesentium et eum. Corrupti dolor exercitationem labore neque. Aut dolor explicabo iusto quae ullam rerum expedita elidendi voluptatem."
             },
             en: {
                 profile: "https://s3.amazonaws.com/uifaces/faces/twitter/dmitriychuta/128.jpg",
                 name:"Dmitriy Chuta",
                 text: "Mollitia quam cupiditate quisquam. Itaque rerum alias ut. Ut inventore et aliquid."
             },
-            ge: {
+            de: {
                 profile: "https://s3.amazonaws.com/uifaces/faces/twitter/dmitriychuta/128.jpg",
                 name:"Dmitriy Chuta",
                 text: "Asperiores et voluptas dolores est. Enim iure sunt illum dolor voluptates magni accusantium tempora non. Vel aliquam aut natus voluptatem ullam consequatur ab nulla."
@@ -76,7 +76,7 @@ export default {
         }]
     }
   },
-  
+
     created(){
        this.reviews.forEach((obj)=>{
             for(let prop in obj){
@@ -84,7 +84,7 @@ export default {
                     if (prop === this.$route.params.localeId){
                         //console.log("property", obj[prop], "locale", this.$route.params.localeId)
                         this.vmReviews.push({ profile: obj[prop].profile, name: obj[prop].name, text: obj[prop].text})
-                    }    
+                    }
                 }
             }
        })
@@ -96,7 +96,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .carousel{
-    background-image: url('https://static1.squarespace.com/static/56e2b85ca3360c97b8b557c0/56e2c484356fb0c2d9534961/58a45d969f74565ea7d7aad7/1487167058764/x_qkvdmtdni-ben-warren.jpg?format=1500w');
+    background-imade: url('https://static1.squarespace.com/static/56e2b85ca3360c97b8b557c0/56e2c484356fb0c2d9534961/58a45d969f74565ea7d7aad7/1487167058764/x_qkvdmtdni-ben-warren.jpg?format=1500w');
     /*background-color: rgb(14, 161, 172);*/
     background-size:cover;
     background-attachment: fixed;
@@ -122,7 +122,7 @@ export default {
     flex-direction: column;
     align-items:center;
     justify-content: center;
-   
+
 }
 .review-item, .carousel__right, .carousel__left{
     z-index:5;
