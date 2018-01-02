@@ -24,7 +24,7 @@ export default {
 }
 </script> 
 
-<style scop ed>
+<style scoped>
 #Weather-wrapper{
     display:flex;
     flex-direction:column;
@@ -33,8 +33,13 @@ export default {
     background-color:#333;
     color:white;
 }
-.fe_container .fe_title{
-    border: 0;
-    color:#333;
+
+/*.fe_container .fe_daily{
+    display: flex;
+    align-items:top;
+    justify-content: center;
 }
+.fe_container .fe_temp_bar{
+    top:15px;
+}*/
 </style>

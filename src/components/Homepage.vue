@@ -93,4 +93,11 @@ export default {
   grid-column: 1 / 7;
   grid-row: 7;
 }
+
+.fe_container .fe_title {
+    color:#333;
+    height: 0;
+    border: 0;
+    height:0;
+}
 </style>
