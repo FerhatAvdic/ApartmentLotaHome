@@ -1,8 +1,7 @@
 <template>
   <div id="Slider">
-    <img class="logo" src="../assets/images/lota-logo.svg">
-    <h1>{{vmText.title}}</h1>
-    <p>{{vmText.description}}</p>
+    <h1 class="header">{{vmText.title}}</h1>
+    <p class="paragraph">{{vmText.description}}</p>
   </div>
 </template>
 
@@ -26,9 +25,9 @@ export default {
             ge: 'Njemački'
         },
         description: {
-            hr: 'Hrvatski',
-            en: 'Engleski',
-            ge: 'Njemački'
+            hr: 'Molestiae voluptatem ut earum dolor voluptatem maxime et voluptas eaque. Natus illum porro. Quis fugit deleniti odit. Mollitia voluptatem asperiores.Voluptatem blanditiis eum fugit ut harum. Qui earum ut officia. Quo debitis soluta minus magnam et dolores ad quae. Ea recusandae labore dolores alias.Hrvatski',
+            en: 'Molestiae voluptatem ut earum dolor voluptatem maxime et voluptas eaque. Natus illum porro. Quis fugit deleniti odit. Mollitia voluptatem asperiores.Voluptatem blanditiis eum fugit ut harum. Qui earum ut officia. Quo debitis soluta minus magnam et dolores ad quae. Ea recusandae labore dolores alias.Engleski',
+            ge: 'Molestiae voluptatem ut earum dolor voluptatem maxime et voluptas eaque. Natus illum porro. Quis fugit deleniti odit. Mollitia voluptatem asperiores.Voluptatem blanditiis eum fugit ut harum. Qui earum ut officia. Quo debitis soluta minus magnam et dolores ad quae. Ea recusandae labore dolores alias.Njemački'
         }
       }
     }
@@ -42,13 +41,16 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 #Slider{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2e2e2e;
-  background: #dddddd;
-  background-image: url('../assets/images/rovinj.jpg');
+  color: #ffffff;
+  background-color: #d83155;
+  /*background-image: url('../assets/images/rovinj.jpg');*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -57,8 +59,19 @@ export default {
   /*width: 100%;
   height: 430px;*/
 }
-.logo{
-  width: 230px;
-  margin-top: 35px;
+.header{
+  padding: 10px 0;
+  font-size: 36px;
+  width:100%;
+  text-align:left;
+}
+.paragraph{
+  padding: 10px 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+.header, .paragraph{
+  width:50%;
 }
 </style>

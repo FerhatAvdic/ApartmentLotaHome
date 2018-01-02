@@ -1,7 +1,11 @@
 <template>
   <div id="app">
-    <localeNav/>
-    <router-view :key="$route.fullPath"></router-view>
+    <v-app light>
+       <v-content>
+            <localeNav/>
+            <router-view :key="$route.fullPath"></router-view>
+        </v-content>
+    </v-app>
   </div>
 </template>
 
@@ -19,6 +23,8 @@ export default {
 body{
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
 }
 ul{
   list-style-type: none;

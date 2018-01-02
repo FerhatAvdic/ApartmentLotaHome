@@ -1,13 +1,12 @@
 <template>
   <div id="Reviews">
         <v-carousel hide-delimiters>
-            <v-carousel-item v-for="r in vmReviews" :key="r.profile" src="http://www.beaches.com/assets/img/home/rst-btc.jpg" class="basicFlex">
-                     <div class="overlay"></div>
-                     <div class="firstPlan">
-                        <v-avatar :tile="false" :size="'100px'" class="grey lighten-4">
+            <v-carousel-item v-for="r in vmReviews" :key="r.profile" src="">
+                     <div class="review-item">
+                        <v-avatar :tile="false" :size="'80px'" class="grey lighten-4">
                             <img :src="r.profile">
                         </v-avatar>
-                        <h4>{{r.name}}</h4>
+                        <h2>{{r.name}}</h2>
                         <p><em>{{r.text}}</em></p>
                      </div>
             </v-carousel-item>
@@ -96,21 +95,14 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
-.basicFlex{
-    position:relative;
-    height:100%;
-    width:100%;
-    color:white;
+.carousel{
+    background-image: url('https://static1.squarespace.com/static/56e2b85ca3360c97b8b557c0/56e2c484356fb0c2d9534961/58a45d969f74565ea7d7aad7/1487167058764/x_qkvdmtdni-ben-warren.jpg?format=1500w');
+    /*background-color: rgb(14, 161, 172);*/
     background-size:cover;
     background-attachment: fixed;
+    height: 100%;
 }
-.overlay{
-    position: absolute;
-    width:100%;
-    height:100%
-}
-.overlay::before{
+.carousel::before{
     content:"";
     display:block;
     position: absolute;
@@ -118,15 +110,21 @@ export default {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: black;
-    opacity: 0.7;
-    z-index: 3;
+    background-color:#a51534;/* rgb(14, 161, 172);*/
+    opacity: 0.9;
+    z-index: 0;
 }
-.firstPlan{
+.review-item{
     display: flex;
+    width:50%;
+    text-align: center;
+    color:white;
     flex-direction: column;
     align-items:center;
     justify-content: center;
+   
+}
+.review-item, .carousel__right, .carousel__left{
     z-index:5;
 }
 </style>
