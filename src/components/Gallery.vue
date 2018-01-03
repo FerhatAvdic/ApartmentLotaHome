@@ -1,10 +1,9 @@
 <template>
   <div id="Gallery">
-
     <v-container fluid grid-list-md>
       <v-layout row wrap>
         <v-flex d-flex xs12 sm6 md3 v-for="(img, index) in gallery" :key="img.id" :style="{'order':index}" class="gallery-item">
-            <img :src="img.utl">
+            <img :src="img.url">
         </v-flex>
     </v-layout>
     </v-container>
@@ -12,9 +11,9 @@
 </template>
 
 <script>
-//import firebase from './firebaseInit'
-//import 'firebase/firestore'
-//const db = firebase.firestore()
+import firebase from './firebaseInit'
+import 'firebase/firestore'
+const db = firebase.firestore()
 
 export default {
   id: '#Gallery',
@@ -25,15 +24,15 @@ export default {
     }
   },
   created(){
-    /*db.collection("homePhotos").get().then(querySnapshot => {
+    db.collection("homePhotos").get().then(querySnapshot => {
       querySnapshot.forEach(doc => {
           const homePhoto = {
               'id': doc.id,
               'url':doc.data().url
           }
           this.gallery.push(homePhoto)
-      });
-    });*/
+      })
+    })
   }
 }
 
@@ -56,5 +55,11 @@ export default {
 }
 .container.grid-list-md {
     padding: 0px;
+}
+.gallery-item{
+  max-height: 320px;
+}
+.gallery-item img{
+  object-fit: cover;
 }
 </style>
