@@ -1,12 +1,22 @@
 <template>
   <div id="Homepage">
-    <Logo/>
-    <Slider/>
-    <Gmap id="Gmap"/>
-    <Weather/>
-    <Booking/>
-    <Gallery/>
+    <div class="welcome-grid">
+        <Logo/>
+        <Slider/>
+        <Gmap id="Gmap"/>
+    </div>
     <Services/>
+    <Gallery/>
+    <v-container fluid grid-list-md class="lota-section">
+      <v-layout row wrap style="height: 100%;">
+        <v-flex d-flex justify-center align-center xs12 sm12 md6 >
+          <Weather/>
+        </v-flex>
+        <v-flex d-flex justify-center align-center xs12 sm12 md6>
+             <Booking/>
+        </v-flex>
+      </v-layout>
+    </v-container>
     <Reviews/>
     <Footer/>
   </div>
@@ -47,7 +57,72 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
+.lota-section{
+  height: 300px;
+  padding: 50px 10vw;
+  background-color: #333;
+  color:white;
+}
+.booking-flex{
+  height:100%;
+  color:white;
+}
+.welcome-grid{
+  display: grid;
+  grid-template-columns: 50vw 50vw;
+  grid-template-rows: 50vh 50vh;
+}
+#Logo{
+  grid-column: 2/3;
+  grid-row: 1/3;
+}
+#Slider{
+  grid-column: 1/2;
+  grid-row: 1;
 
+}
+#Gmap{
+  grid-column: 1 / 2;
+  grid-row: 2;
+}
+
+@media only screen and (max-width: 768px) {
+    .welcome-grid{
+      grid-template-rows: 100vh 100vh;
+    }
+    #Logo{
+      grid-column: 2/3;
+      grid-row: 1;
+    }
+    #Slider{
+      grid-column: 1/2;
+      grid-row: 1;
+
+    }
+    #Gmap{
+      grid-column: 1 / 3;
+      grid-row: 2;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .welcome-grid{
+      grid-template-rows: 100vh 100vh 100vh;
+    }
+    #Logo{
+      grid-column: 1/3;
+      grid-row: 1;
+    }
+    #Slider{
+      grid-column: 1/3;
+      grid-row: 2;
+
+    }
+    #Gmap{
+      grid-column: 1 / 3;
+      grid-row: 3;
+    }
+}
+/*
 #Homepage{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -92,11 +167,18 @@ export default {
   grid-column: 1 / 7;
   grid-row: 7;
 }
+*/
 
 .fe_container .fe_title {
-    color:#333;
+    display:none;
     height: 0;
     border: 0;
     height:0;
+}
+.fe_location{
+  display:none;
+}
+.fe_container{
+  height:unset;
 }
 </style>

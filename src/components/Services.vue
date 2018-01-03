@@ -1,34 +1,33 @@
 <template>
   <div id="Services">
-        <v-container fluid grid-list-md class="services-grid">
-    <v-layout row wrap>
-      <v-flex d-flex xs6 sm3 md2>
-         <v-card-text><i class="material-icons">event_seat</i> </v-card-text>
-        <v-card-title>Living Room</v-card-title>
-      </v-flex>
-      <v-flex d-flex xs6 sm3 md2>
-          <v-card-text><i class="material-icons">hotel</i> </v-card-text>
-        <v-card-title>Bedrooms</v-card-title>
-      </v-flex>
-      <v-flex d-flex xs6 sm3 md2>
-         <v-card-text><i class="material-icons">kitchen</i> </v-card-text>
-        <v-card-title>Kitchen</v-card-title>
-      </v-flex>
-      <v-flex d-flex xs6 sm3 md2>
-         <v-card-text><i class="material-icons">panorama_fish_eye</i> </v-card-text>
-        <v-card-title>Sea view</v-card-title>
-      </v-flex>
-      <v-flex d-flex xs6 sm3 md2>
-        <v-card-text><i class="material-icons">wifi</i></v-card-text>
-        <v-card-title>Wifi</v-card-title>
-      </v-flex>
-      <v-flex d-flex xs6 sm3 md2>
-         <v-card-text><i class="material-icons">local_parking</i> </v-card-text>
-         <v-card-title>Parking</v-card-title>
-      </v-flex>
-
-    </v-layout>
-  </v-container>
+    <v-container fluid grid-list-md class="services-grid">
+      <v-layout row wrap justify-center>
+        <v-flex d-flex xs6 sm3 md2>
+          <v-card-text><i class="material-icons">event_seat</i> </v-card-text>
+          <v-card-title>Living Room</v-card-title>
+        </v-flex>
+        <v-flex d-flex xs6 sm3 md2>
+            <v-card-text><i class="material-icons">hotel</i> </v-card-text>
+          <v-card-title>Bedrooms</v-card-title>
+        </v-flex>
+        <v-flex d-flex xs6 sm3 md2>
+          <v-card-text><i class="material-icons">kitchen</i> </v-card-text>
+          <v-card-title>Kitchen</v-card-title>
+        </v-flex>
+        <v-flex d-flex xs6 sm3 md2>
+          <v-card-text><i class="material-icons">panorama_fish_eye</i> </v-card-text>
+          <v-card-title>Sea view</v-card-title>
+        </v-flex>
+        <v-flex d-flex xs6 sm3 md2>
+          <v-card-text><i class="material-icons">wifi</i></v-card-text>
+          <v-card-title>Wifi</v-card-title>
+        </v-flex>
+        <v-flex d-flex xs6 sm3 md2>
+          <v-card-text><i class="material-icons">local_parking</i> </v-card-text>
+          <v-card-title>Parking</v-card-title>
+        </v-flex>
+      </v-layout>
+    </v-container>
   </div>
 </template>
 
@@ -48,11 +47,9 @@ export default {
 <style scoped>
 
 #Services{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color:#333;
-    color:#22d9de;
+    color:#fff;/*#22d9de;*/
+    padding: 50px 0;
 }
 .flex{
     font-size:24px;

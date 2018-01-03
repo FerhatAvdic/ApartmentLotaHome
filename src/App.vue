@@ -23,8 +23,10 @@ export default {
 body{
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto';
   line-height: 1.5;
+  
+    background-color:#333;
 }
 ul{
   list-style-type: none;

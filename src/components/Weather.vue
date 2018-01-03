@@ -1,5 +1,4 @@
 <template>
-    <div id="Weather-wrapper">
         <weather
         api-key="8a7cb786296f8468fa6d0c9eb07ce2e9"
         title="Kostrena Weather"
@@ -10,7 +9,6 @@
         bar-color="white"
         text-color="White">
     </weather>
-    </div>
 </template>
 
 <script>
@@ -25,14 +23,15 @@ export default {
 </script>
 
 <style scoped>
-#Weather-wrapper{
+/*#Weather-wrapper{
     display:flex;
     flex-direction:column;
     align-items: center;
     justify-content: center;
     background-color:#333;
     color:white;
-}
+    height:100%;
+}*/
 
 /*.fe_container .fe_daily{
     display: flex;

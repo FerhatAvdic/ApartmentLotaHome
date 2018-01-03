@@ -1,6 +1,8 @@
 <template>
   <div id="Booking">
-      <a href="https://www.booking.com/hotel/hr/apartment-lota-kostrena.html" class="booking-link">{{vmText.title}}</a>
+     <div class="text-xs-center">
+        <v-btn href="https://www.booking.com/hotel/hr/apartment-lota-kostrena.html" round large outline dark class="lota-color">{{vmText.title}}</v-btn>
+     </div>
   </div>
 </template>
 
@@ -19,7 +21,7 @@ export default {
         title: {
             hr: 'Rezervirajte',
             en: 'Make a Reservation',
-            de: 'Machen Sie eine Reservierung'
+            de: 'Reservierung Machen'
         }
       }
     }
@@ -33,13 +35,13 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
 #Booking{
     display: flex;
     align-items: center;
     justify-content: center;
     background-color:#333;
     color:#22d9de;
+    height: 100%;
 }
 .application .booking-link{
   text-decoration:none;

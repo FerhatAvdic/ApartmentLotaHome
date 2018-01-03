@@ -50,7 +50,7 @@ export default {
 
 .logo{
   width: 300px;
-  margin-top: 25px;
+  max-width: 75vw;
   z-index: 5;
 }
 </style>
