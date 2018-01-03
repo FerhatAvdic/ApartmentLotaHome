@@ -5,8 +5,9 @@ import Homepage from '@/components/Homepage'
 Vue.use(Router)
 
 const router = new Router({
+  mode: 'history',
   routes: [
-    { 
+    {
       path: '/',
       redirect: '/en'
     },
@@ -17,7 +18,7 @@ const router = new Router({
     }
   ]
 })
-const locales = ['hr', 'en', 'ge']
+const locales = ['hr', 'en', 'de']
 
 
 router.beforeEach((to,from,next) => {

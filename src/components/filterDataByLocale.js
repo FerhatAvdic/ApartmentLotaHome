@@ -10,8 +10,8 @@ export default function filterDataByLocale(object, localeId){
                     //console.log("object.", prop,".", localeProp, ":", object[prop][localeProp])
                     if (localeProp === localeId){
                         newObject[prop]= object[prop][localeProp]
-                    }     
-                        
+                    }
+
                 }
             }
         }
@@ -19,4 +19,3 @@ export default function filterDataByLocale(object, localeId){
     //console.log('object (filtered by locale)', newObject)
     return newObject
 }
-

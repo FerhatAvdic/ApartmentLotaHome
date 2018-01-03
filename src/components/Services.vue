@@ -26,7 +26,7 @@
          <v-card-text><i class="material-icons">local_parking</i> </v-card-text>
          <v-card-title>Parking</v-card-title>
       </v-flex>
-      
+
     </v-layout>
   </v-container>
   </div>
@@ -38,7 +38,7 @@ export default {
   name: 'Services',
   data () {
     return {
-      
+
     }
   }
 }
@@ -52,7 +52,7 @@ export default {
     align-items: center;
     justify-content: center;
     background-color:#333;
-    color:white;
+    color:#22d9de;
 }
 .flex{
     font-size:24px;
