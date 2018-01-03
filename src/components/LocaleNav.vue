@@ -23,7 +23,7 @@ export default {
 <style scoped>
 #LocaleNav{
     position: fixed;
-    top: 0; right:0;
+    top: 10px; right:10px;
     z-index:100;
 }
 

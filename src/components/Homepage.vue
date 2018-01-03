@@ -23,7 +23,6 @@ import Gallery from './Gallery'
 import Services from './Services'
 import Footer from './Footer'
 
-
 export default {
   id: '#Homepage',
   name: 'Homepage',
@@ -62,7 +61,7 @@ export default {
 #Slider{
   grid-column: 1/4;
   grid-row: 1;
-  
+
 }
 #Gmap{
   grid-column: 1 / 4;

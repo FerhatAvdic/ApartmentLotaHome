@@ -11,7 +11,7 @@ export default {
   name: 'Logo',
   data () {
     return {
-      
+
     }
   }
 }
@@ -29,13 +29,12 @@ export default {
     text-align: center;
     color: #ffffff;
     background-color: #333;
-
-    background-image: url('../assets/images/rovinj.jpg');
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: top;
+    background-image: url('../assets/images/kostrena.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: top;
 }
 
 #Logo::before{
@@ -43,15 +42,15 @@ export default {
     position: absolute;
     top:0; left:0;
     background-color: black;
-    opacity: 0.5;
+    opacity: 0.3;
     width:100%;
     height:100%;
-    
+
 }
 
 .logo{
-  width: 230px;
-  margin-top: 35px;
+  width: 300px;
+  margin-top: 25px;
   z-index: 5;
 }
 </style>
