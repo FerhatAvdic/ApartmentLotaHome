@@ -2,16 +2,8 @@
   <div id="Footer">
       <v-container  grid-list-md>
     <v-layout row wrap justify-center>
-      <v-flex d-flex flex-column justify-center>
-       <p><i class="material-icons inline-icon"> copyright</i> All rights reserved 2018</p>
-      </v-flex>
-      <v-flex>
-       <p><i class="material-icons inline-icon">home</i> Maračići 3, 51221 Kostrena, Croatia </p>
-      </v-flex>
-      <v-flex><p><i class="material-icons inline-icon">phone</i> +386999999</p></v-flex>
       
-       <v-flex><p><i class="material-icons inline-icon">email</i> email.email@gmail.com</p></v-flex> 
-       <v-flex>
+      <v-flex d-flex flex-column justify-center>
          <social-sharing url="http://www.apartmani-lota.com"
                       title="Apartmani Lota"
                       description="Our facility is located at a 12-minute walk from the beach in Kostrena - in the Primorje-Goranska County. Apartment Lota has a fully equipped kitchen, one bedroom, a toilet. Guests have free WiFi, satellite dish, TV. You can also relax in the yard in front of the apartment. Opatija is 17 km away while the town of Rijeka 7 km from the apartment. Rijeka Airport is 9 km away."
@@ -42,6 +34,15 @@
           </div>
         </social-sharing>
        </v-flex>
+      <v-flex>
+       <div class="extra-padding"><i class="material-icons inline-icon">home</i> Maračići 3, 51221 Kostrena, Croatia</div> 
+      </v-flex>
+      <v-flex><div class="extra-padding"><i class="material-icons inline-icon">phone</i> +386999999</div> </v-flex>
+      
+       <v-flex><div class="extra-padding"><i class="material-icons inline-icon">email</i> email.email@gmail.com</div> </v-flex> 
+       <v-flex d-flex flex-column justify-center>
+       <div class="extra-padding"><i class="material-icons inline-icon"> copyright</i> All rights reserved 2018</div>
+      </v-flex>
     </v-layout>
   </v-container>
   </div>
@@ -72,7 +73,6 @@ p{
   margin-bottom: 5px;
 }
 #Footer{
-    padding: 15px;
     background-color: #333;
     color:white;
 }
@@ -84,6 +84,9 @@ p{
 }
 .inline-icon {
    vertical-align: middle;
+}
+.extra-padding{
+  margin-top: 15px;
 }
 
 </style>
