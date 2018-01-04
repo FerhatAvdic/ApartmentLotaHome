@@ -1,5 +1,6 @@
 <template>
   <div id="Homepage">
+            <localeNav/>
     <div class="welcome-grid">
         <Logo/>
         <Slider/>
@@ -7,18 +8,21 @@
     </div>
     <Services/>
     <Gallery/>
-    <v-container fluid grid-list-md class="lota-section">
+    <v-container grid-list-md class="lota-section">
       <v-layout row wrap style="height: 100%;">
-        <v-flex d-flex justify-center align-center xs12 sm12 md6 >
+        <v-flex d-flex justify-center align-center xs12 sm12 md7 >
           <Weather/>
         </v-flex>
-        <v-flex d-flex justify-center align-center xs12 sm12 md6>
+        <v-flex d-flex justify-center align-center xs12 sm12 md5>
              <Booking/>
         </v-flex>
       </v-layout>
     </v-container>
     <Reviews/>
     <Footer/>
+
+    
+    
   </div>
 </template>
 
@@ -32,11 +36,13 @@ import Booking from './Booking'
 import Gallery from './Gallery'
 import Services from './Services'
 import Footer from './Footer'
+import localeNav from './localeNav'
 
 export default {
   id: '#Homepage',
   name: 'Homepage',
   components: {
+    localeNav,
     Logo,
     Slider,
     Gmap,
@@ -49,7 +55,7 @@ export default {
   },
   data () {
     return {
-      localeId: this.$route.params.localeId
+      localeId: this.$route.params.localeId,
     }
   }
 }
@@ -57,11 +63,19 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
+#Homepage{
+    background-color: #333;
+}
 .lota-section{
   height: 300px;
   padding: 50px 10vw;
   background-color: #333;
   color:white;
+}
+@media only screen and (max-width: 768px) {
+  .lota-section{
+  height: 400px;
+}
 }
 .booking-flex{
   height:100%;
@@ -169,6 +183,7 @@ export default {
 }
 */
 
+
 .fe_container .fe_title {
     display:none;
     height: 0;
@@ -180,5 +195,8 @@ export default {
 }
 .fe_container{
   height:unset;
+}
+.fa-language{
+  font-size: 36px;
 }
 </style>

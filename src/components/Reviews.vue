@@ -99,8 +99,7 @@ h2{
     margin: 15px 0;
 }
 .carousel{
-    background-imade: url('https://static1.squarespace.com/static/56e2b85ca3360c97b8b557c0/56e2c484356fb0c2d9534961/58a45d969f74565ea7d7aad7/1487167058764/x_qkvdmtdni-ben-warren.jpg?format=1500w');
-    /*background-color: rgb(14, 161, 172);*/
+    background-color:#3ab09c;
     background-size:cover;
     background-attachment: fixed;
     height: 100%;

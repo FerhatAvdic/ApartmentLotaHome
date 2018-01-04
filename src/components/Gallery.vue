@@ -57,7 +57,7 @@ export default {
     padding: 0px;
 }
 .gallery-item{
-  max-height: 320px;
+  height: 320px;
 }
 .gallery-item img{
   object-fit: cover;

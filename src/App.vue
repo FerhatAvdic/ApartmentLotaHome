@@ -2,7 +2,6 @@
   <div id="app">
     <v-app light>
        <v-content>
-            <localeNav/>
             <router-view :key="$route.fullPath"></router-view>
         </v-content>
     </v-app>
@@ -10,12 +9,8 @@
 </template>
 
 <script>
-import LocaleNav from './components/LocaleNav'
 export default {
   name: 'app',
-  components:{
-    LocaleNav
-  }
 }
 </script>
 

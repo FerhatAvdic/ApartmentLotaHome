@@ -4,8 +4,11 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import Vuetify from 'vuetify'
+import SocialSharing from 'vue-social-sharing'
+import 'font-awesome/css/font-awesome.min.css'
  
 Vue.use(Vuetify)
+Vue.use(SocialSharing);
 
 
 import './assets/css/flags.min.css'
