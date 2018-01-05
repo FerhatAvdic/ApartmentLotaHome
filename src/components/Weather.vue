@@ -4,10 +4,11 @@
         title="Kostrena Weather"
         latitude="45.2999988"
         longitude="14.499998"
-        language="hr"
+        language="en"
         units="si"
         bar-color="white"
-        text-color="White">
+        text-color="White"
+        hide-header="true">
     </weather>
 </template>
 
@@ -41,4 +42,5 @@ export default {
 .fe_container .fe_temp_bar{
     top:15px;
 }*/
+
 </style>

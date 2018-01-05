@@ -20,11 +20,14 @@ body{
   padding: 0;
   font-family: 'Roboto';
   line-height: 1.5;
-  
+
     background-color:#333;
 }
 ul{
   list-style-type: none;
   padding: 0;
+}
+.fe_loading_icon{
+  display: none !important;
 }
 </style>

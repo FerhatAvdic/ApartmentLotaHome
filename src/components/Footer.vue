@@ -2,7 +2,7 @@
   <div id="Footer">
       <v-container  grid-list-md>
     <v-layout row wrap justify-center>
-      
+
       <v-flex d-flex flex-column justify-center>
          <social-sharing url="http://www.apartmani-lota.com"
                       title="Apartmani Lota"
@@ -21,9 +21,9 @@
                   <i class="fa fa-pinterest"></i>
                 </v-btn>
               </network>
-              <network network="reddit">
-                <v-btn fab dark small color="orange">
-                  <i class="fa fa-reddit"></i>
+              <network network="twitter">
+                <v-btn fab dark small color="blue">
+                  <i class="fa fa-twitter"></i>
                 </v-btn>
               </network>
               <network network="whatsapp">
@@ -35,11 +35,11 @@
         </social-sharing>
        </v-flex>
       <v-flex>
-       <div class="extra-padding"><i class="material-icons inline-icon">home</i> Maračići 3, 51221 Kostrena, Croatia</div> 
+       <div class="extra-padding"><i class="material-icons inline-icon">home</i> Maračići 3, 51221 Kostrena, Croatia</div>
       </v-flex>
       <v-flex><div class="extra-padding"><i class="material-icons inline-icon">phone</i> +386999999</div> </v-flex>
-      
-       <v-flex><div class="extra-padding"><i class="material-icons inline-icon">email</i> email.email@gmail.com</div> </v-flex> 
+
+       <v-flex><div class="extra-padding"><i class="material-icons inline-icon">email</i> email.email@gmail.com</div> </v-flex>
        <v-flex d-flex flex-column justify-center>
        <div class="extra-padding"><i class="material-icons inline-icon"> copyright</i> All rights reserved 2018</div>
       </v-flex>
@@ -55,7 +55,7 @@ export default {
   name: 'Footer',
   data () {
     return {
-      
+
     }
   }
 }
