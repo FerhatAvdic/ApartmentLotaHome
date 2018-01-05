@@ -1,8 +1,8 @@
 <template>
   <div id="Booking">
     <v-btn href="https://www.booking.com/hotel/hr/apartment-lota-kostrena.html" round dark large color="primary" class="btn-margin">{{vmText.title}}</v-btn>
-    <h4 id="cin">Check-in &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2 PM - 10 PM</h4>
-    <h4 id="cout">Check-out &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12 AM - 10 AM</h4>
+    <h4 id="cin">{{vmText.cin}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2 PM - 10 PM</h4>
+    <h4 id="cout">{{vmText.cout}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12 AM - 10 AM</h4>
   </div>
 </template>
 
@@ -22,7 +22,18 @@ export default {
             hr: 'Rezervirajte',
             en: 'Make a Reservation',
             de: 'Reservierung Machen'
+        },
+        cin: {
+            hr: 'Prijava:',
+            en: 'Check-in:',
+            de: 'Check-in:'
+        },
+        cout: {
+            hr: 'Odjava:',
+            en: 'Check-out:',
+            de: 'Check-out:'
         }
+
       }
     }
   },

@@ -69,7 +69,7 @@ export default {
 }
 #localeNav .speed-dial {
     position: fixed;
-  z-index: 10000;
+    z-index: 10000;
   }
 
 #localeNav .btn--floating {
