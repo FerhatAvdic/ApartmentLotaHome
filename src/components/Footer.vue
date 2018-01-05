@@ -12,7 +12,7 @@
                       inline-template>
           <div class="big-icons">
               <network network="facebook">
-                <v-btn fab dark small color="blue">
+                <v-btn fab dark small color="indigo">
                   <i class="fa fa-facebook"></i>
                 </v-btn>
               </network>

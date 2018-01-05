@@ -108,9 +108,9 @@ export default {
             de: 'Parken'
         },
         parkinfo: {
-            hr: 'Besplatno privatno parkiralište dostupno je u okviru objekta (rezervacija nije potrebna). Cijela jedinica je prilagođena invalidskim kolicima i nalazi se u prizemlju.',
-            en: 'Free private parking is available on site (reservation is not needed). The entire unit is wheelchair accessible and is located on ground floor.',
-            de: 'Kostenfreie Parkplätze stehen vor Ort zur Verfügung (Reservierung ist nicht erforderlich). Die gesamte Unterkunft ist rollstuhlgerecht und befindet sich im Erdgeschoss.'
+            hr: 'Besplatno privatno parkiralište dostupno je u okviru objekta (rezervacija nije potrebna).',
+            en: 'Free private parking is available on site (reservation is not needed).',
+            de: 'Kostenfreie Parkplätze stehen vor Ort zur Verfügung (Reservierung ist nicht erforderlich).'
         },
         petstitle: {
             hr: 'Kućni ljubimci',
@@ -146,7 +146,7 @@ h2{
     padding: 50px 0;
 }
 .flex{
-    align-items:center;
+    align-items:flex-start;
 }
 .flex .material-icons{
     font-size:36px;

@@ -27,7 +27,11 @@ ul{
   list-style-type: none;
   padding: 0;
 }
-.fe_loading_icon{
+#fe_loading_icon{
   display: none !important;
+}
+.fe_loading{
+    display: none !important;
+
 }
 </style>

@@ -199,4 +199,7 @@ export default {
 .fa-language{
   font-size: 36px;
 }
+.fe_loading{
+  display:none;
+}
 </style>

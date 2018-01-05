@@ -58,6 +58,7 @@ export default {
 }
 .gallery-item{
   height: 320px;
+  width: 100%;;
 }
 .gallery-item img{
   object-fit: cover;
