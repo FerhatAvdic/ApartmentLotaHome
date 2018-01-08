@@ -8,7 +8,7 @@
         units="si"
         bar-color="white"
         text-color="White"
-        hide-header="true">
+        hide-header>
     </weather>
 </template>
 
@@ -20,6 +20,11 @@ export default {
     components: {
         'weather': VueWeatherWidget
     },
+    data(){
+        return{
+            hideHeader:true
+        }
+    }
 }
 </script>
 

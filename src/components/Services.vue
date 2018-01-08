@@ -2,7 +2,14 @@
   <div id="Services">
     <v-container  grid-list-md class="services-grid">
       <v-layout row wrap>
-        <v-flex d-flex xs12 sm4 md4>
+        <v-flex d-flex xs12 sm4 md4 v-for="(s,i) in services" :key="i">
+          <div>
+            <v-icon color="white">{{s.icon}}</v-icon>
+            <h2>{{s.title}}</h2>
+            <p>{{s.description}}</p>
+          </div>
+        </v-flex>
+        <!--<v-flex d-flex xs12 sm4 md4 v-for="(s,i) in services" :key="i">
           <div>
             <i class="material-icons">hotel</i>
             <h2>{{vmText.captitle}}</h2>
@@ -44,7 +51,7 @@
             <h2>{{vmText.petstitle}}</h2>
             <p>{{vmText.petsinfo}}</p>
           </div>
-        </v-flex>
+        </v-flex>-->
       </v-layout>
     </v-container>
   </div>
@@ -52,12 +59,17 @@
 
 <script>
 import filterDataByLocale from './filterDataByLocale'
+import firebase from './firebaseInit'
+import 'firebase/firestore'
+
+const db = firebase.firestore()
 
 export default {
   id: '#Services',
   name: 'Services',
   data () {
     return {
+      services:[],
       //object to be extended by only one locale
       vmText: {},
       //object with all locales
@@ -126,8 +138,28 @@ export default {
       }
     }
   },
+  methods:{
+    listServices(){
+        this.servicesLoading = true
+        this.services=[]
+        db.collection('services').orderBy('position').get().then(querySnapshot => {
+                querySnapshot.forEach(doc => {
+                    const data = {
+                        'id': doc.id,
+                        'icon': doc.data().icon,
+                        'title':doc.data().title,
+                        'description':doc.data().description,
+                        'position':doc.data().position
+                    }
+                    this.services.push(data)
+                })
+        })
+        this.servicesLoading = false
+    }
+  },
   created() {
       this.vmText = filterDataByLocale(this.text, this.$route.params.localeId)
+      this.listServices()
   }
   }
 </script>

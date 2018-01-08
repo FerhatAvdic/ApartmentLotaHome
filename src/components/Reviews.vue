@@ -1,6 +1,6 @@
 <template>
   <div id="Reviews">
-        <v-carousel hide-delimiters>
+        <!--<v-carousel hide-delimiters>
             <v-carousel-item v-for="r in vmReviews" :key="r.profile" src="">
                      <div class="review-item">
                         <v-avatar :tile="false" :size="'80px'" class="grey lighten-4">
@@ -10,18 +10,31 @@
                         <p><em>{{r.text}}</em></p>
                      </div>
             </v-carousel-item>
+        </v-carousel>-->
+        <v-carousel hide-delimiters>
+            <v-carousel-item v-for="(r,i) in backendReviews" :key="i" src="">
+                     <div class="review-item">
+                        <v-avatar :tile="false" :size="'80px'" class="grey lighten-4">
+                            <img :src="r.profileUrl">
+                        </v-avatar>
+                        <h2>{{r.name}}</h2>
+                        <p><em>{{r.comment}}</em></p>
+                     </div>
+            </v-carousel-item>
         </v-carousel>
   </div>
 </template>
 
 <script>
-import Slider from './Slider'
-import Gmap from './Gmap'
+import firebase from './firebaseInit'
+import 'firebase/firestore'
+const db = firebase.firestore()
 export default {
   id: '#Reviews',
   name: 'Reviews',
   data () {
     return {
+        backendReviews:[],
         vmReviews:[],
         reviews:[{
             hr: {
@@ -76,8 +89,30 @@ export default {
         }]
     }
   },
+  methods:{
+    listReviews(){
+        this.reviewsLoading = true
+        this.backendReviews=[]
+        db.collection('reviews').get().then(querySnapshot => {                  
+                querySnapshot.forEach(doc => {
+                    const data = {
+                        'id': doc.id,
+                        'profileUrl': doc.data().profileUrl,
+                        'profilePath': doc.data().profilePath,
+                        'name':doc.data().name,
+                        'comment':doc.data().comment,
+                        'position':doc.data().position
+                    }
+                    this.backendReviews.push(data)
+                })
+        })
+        this.reviewsLoading = false
+        console.log("backendReviews", this.backendReviews)
+    }
+  },
 
     created(){
+        this.listReviews()
        this.reviews.forEach((obj)=>{
             for(let prop in obj){
                 if(obj.hasOwnProperty(this.$route.params.localeId)){

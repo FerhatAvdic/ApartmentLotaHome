@@ -24,7 +24,7 @@ export default {
     }
   },
   created(){
-    db.collection("homePhotos").get().then(querySnapshot => {
+    db.collection("homePhotos").orderBy('position').get().then(querySnapshot => {
       querySnapshot.forEach(doc => {
           const homePhoto = {
               'id': doc.id,
@@ -58,9 +58,9 @@ export default {
 }
 .gallery-item{
   height: 320px;
-  width: 100%;;
+  width: 100%;
 }
 .gallery-item img{
-  object-fit: cover;
+  height:100%;
 }
 </style>
